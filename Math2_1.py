@@ -1,17 +1,19 @@
 """Write a program that counts for the user.
 Let the user enter the starting number, the ending number, and the amount by which to count.
 """
+try:
+    a = int(input("Initial nr: "))
+    b = int(input ("Final nr: "))
+    x = int(input ("Amount nr: "))
 
-a = int(input("Initial nr: "))
-b = int(input ("Final nr: "))
-x = int(input ("Amount nr: "))
+    while x <= 0:
+        x = int(input("Amount nr should bigger then 0. Choose other one:  "))
 
-while x <= 0:
-    x = int(input("Amount nr should bigger then 0. Choose other one:  "))
-
-while b < a:
-    b = int(input("Please choose other number for final number bigger then %d " %a))
+    while b < a:
+        b = int(input("Please choose other number for final number bigger then %d " %a))
 
 
-for i in range(a, b, x):
-    print(i)
+    for i in range(a, b, x):
+        print(i)
+except ValueError:
+    print ("The value introduced in not integer. Run again")

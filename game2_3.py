@@ -10,22 +10,25 @@ words = ["masa", "casa", "scaun", "tabla", "televizor", "mobila", "creion", "nop
 
 #random.choice()
 
-print("Welcome to the game!")
-word = random.choice(words)
+# print("Welcome to the game!")
+# word = random.choice(words)
+#
+# number_of_chars = len(word)
+# print("The word has: %d letters" %(number_of_chars))
+# print (word)
+# fault = 0
+# while fault < 5:
+#     letter = input("Say letter:")
+#     list(word)
+#     for i in range(len(word)):
+#         if letter == list(i):
+#             yes = "true"
+#             print("este")
+#     if yes != "true ":
+#     else:
+#             print("nu este")
+#             fault +=1
 
-number_of_chars = len(word)
-print (number_of_chars)
-print("The word has: %d letters" %(number_of_chars))
-print (word)
-i = 0
-while i < 5:
-    letter = input("Say letter:")
-    for char in word:
-        if char == letter:
-            print("este")
-        else:
-            print("nu este")
-    i +=1
 #
 # print("Guess the characters")
 #
