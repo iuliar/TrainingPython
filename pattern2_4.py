@@ -8,7 +8,18 @@
 * * *
 * *
 """
+#Varianta 1
+# i = 1
+# j = 2
+# for i in range(9):
+#     if i < 6:
+#         print(i * "* ")
+#     else:
+#         print ((i-j) * "* ")
+#         j += 2
 
+
+#Varianta 2
 i = 1
 for i in range(6):
     print(i * "* ")
