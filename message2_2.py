@@ -4,7 +4,5 @@ Create a program that gets a message from the user and then prints it out backwa
 """
 
 mesaj = input("Enter a message:")
-for i in mesaj:
-    list = list[i]
 
-print (list)
+print ("The message write backward is: \n ", mesaj[::-1])
