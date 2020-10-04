@@ -29,14 +29,11 @@ while count < len(word) and count < 5:
             lista2[k] = letter
         k = k+1
     print(lista2)
-    a = 0
-
+    count = count + 1
     if "-" in lista2:
         continue
     else:
         break
-    #sunt toate literele aflate: da/nu>> asta mai trebuie sa o gandesc
-    count = count + 1
 
 guess = input("\nGuess the word: ")
 if guess == word:
