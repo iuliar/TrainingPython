@@ -7,24 +7,18 @@
 * * * *
 * * *
 * *
+*
 """
+
+
 #Varianta 1
-i = 1
-j = 1
-for i in range(9):
-    if i < 6:
-        print(i * "* ")
-    else:
-        print ((i-j) * "* ")
-        j += 2
 
-
-#Varianta 2
-i = 1
 for i in range(6):
     print(i * "* ")
 
-j = 5
-while j > 1:
-    print((j-1) * "* ")
+j = 4
+while j > 0:
+    print(j * "* ")
     j = j-1
+
+
