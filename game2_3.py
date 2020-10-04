@@ -6,9 +6,6 @@ Then the player gets five chances to ask if a letter is in the word.
 import random
 
 words = ["masa", "casa", "scaun", "tabla", "televizor", "mobila", "creion", "noptiera", "candelabru"]
-
-random.choice(words)
-
 print("Welcome to the game!")
 word = random.choice(words)
 
