@@ -8,23 +8,30 @@ while True:
         break
     except ValueError:
         print("The value introduced in not an integer. Try again")
+        continue
 
-#
-# try:
-#     a = int(input("Initial nr: "))
-#     b = int(input ("Final nr: "))
-#     x = int(input ("Amount nr: "))
-#
-# except ValueError:
-#     print("Not an integer: ")
-#     sys.exit()
-#
-# while b < a:
-#     try:
-#         b = int(input("Please choose other number for final number bigger then %d " %a))
-#     except ValueError:
-#         print("The value introduced in not integer. Try again")
-#         b = int(input("Final nr: "))
-#
-# for i in range(a, b, x):
-#     print(i)
+
+while True:
+    try:
+        b = int(input("Final nr: "))
+        if a < b:
+            break
+        else:
+            print ("Please insert a value bigger then initial one")
+    except ValueError:
+        print("The value introduced in not an integer. Try again")
+        continue
+
+while True:
+    try:
+        x = int(input("Amount nr: "))
+        if  x > 0:
+            break
+        else:
+            print ("Please insert a value bigger then 0")
+    except ValueError:
+        print("The value introduced in not an integer. Try again")
+        continue
+
+for i in range(a, b, x):
+    print(i)

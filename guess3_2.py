@@ -7,13 +7,16 @@ user will get a "Well guessed!" message, and the program will exit.
 import random
 import sys
 
-nr = [1,2,3,4,5,6,7,8,9]
+#nr = [1,2,3,4,5,6,7,8,9]
+#nr_random = random.choice(nr)
 print("Welcome to the game!")
-nr_random = random.choice(nr)
+nr_random = random.randint(1,10)
+
 print(nr_random)
 
-try:
-    while True:
+
+while True:
+    try:
         nr_entered = int(input("Please enter a number: "))
         if nr_entered == nr_random:
             print(nr_entered)
@@ -21,8 +24,7 @@ try:
             break
         else:
             continue
-except ValueError:
-    print ("Not an integer. Try again")
-    sys.exit()
+    except ValueError:
+        print ("Not an integer. Try again")
+        continue
 
-    #?? goTO
