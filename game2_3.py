@@ -7,7 +7,7 @@ import random
 
 words = ["masa", "casa", "scaun", "tabla", "televizor", "mobila", "creion", "noptiera", "candelabru"]
 print("Welcome to the game!")
-word = random.choice(words)
+word = random.choice(words).lower()
 
 number_of_chars = len(word)
 print("The word has: %d letters" %(number_of_chars))
@@ -19,7 +19,7 @@ for j in range(number_of_chars):
     lista2.append("-")
 
 while count < len(word) and count < 5:
-    letter = input("write a letter: ")
+    letter = input("write a letter: ").lower()
     k = 0
     for i in lista:
         if letter == i:
@@ -27,9 +27,8 @@ while count < len(word) and count < 5:
         k = k+1
     print(lista2)
     count = count + 1
-    if "-" in lista2:
-        continue
-    else:
+    if "-" not in lista2:
+        print("The word, %s. You are right", word)
         break
 
 guess = input("\nGuess the word: ")

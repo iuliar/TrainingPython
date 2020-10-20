@@ -10,7 +10,7 @@ import sys
 #nr = [1,2,3,4,5,6,7,8,9]
 #nr_random = random.choice(nr)
 print("Welcome to the game!")
-nr_random = random.randint(1,10)
+nr_random = random.randint(1, 10)
 
 print(nr_random)
 
@@ -20,11 +20,10 @@ while True:
         nr_entered = int(input("Please enter a number: "))
         if nr_entered == nr_random:
             print(nr_entered)
-            print ("Well guessed")
+            print("Well guessed")
             break
         else:
-            continue
+            print("The number is not correct.")
     except ValueError:
-        print ("Not an integer. Try again")
-        continue
+        print("Not an integer. Try again")
 

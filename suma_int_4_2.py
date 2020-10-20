@@ -10,7 +10,6 @@ length_of_the_list = len(initial_list)
 suma = 0
 for i in range(length_of_the_list):
     if type(initial_list[i]) == int or type(initial_list[i]) == float:
-        print(initial_list[i])
         suma = suma + initial_list[i]
 
-print ("The sum of the integer and float values from the list is: ", suma)
+print("The sum of the integer and float values from the list is: ", suma)
