@@ -9,8 +9,7 @@ message =("m1", "m2", "m3")
 import keyboard
 import random
 
-while True:  # making a loop
+for i in range(10):
     print(random.choice(message))
-    time.sleep(1)
-    if keyboard.is_pressed('q'):  # if key 'q' is pressed
-        break  # finishing the loop
+
+
