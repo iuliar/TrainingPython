@@ -14,14 +14,19 @@ from pip._vendor.distlib.compat import raw_input
 
 
 def fibo(x):
-    fib = [0]
-    a=0
-    b=1
-    for i in range(1, x, 1):
-        c = a + b
-        a=b
-        b=c
-        fib.append(c)
+    if x == 1:
+        fib = [1]
+    elif x == 2:
+        fib = [1, 1]
+    else:
+        fib = [1, 1]
+        a=1
+        b=1
+        for i in range(2, x, 1):
+            c = a + b
+            a=b
+            b=c
+            fib.append(c)
     return fib
 
 
@@ -29,8 +34,8 @@ while True:
     try:
         n = int(input("write a nr: "))
         print(fibo(n))
-        i = input('Do you want to exit? (Yex/No) ')
-        if i == "Yes".lower():
+        i = input('Do you want to exit? ')
+        if i == "":
             break
     except ValueError:
         print("Invalid number, introduce an integer")
