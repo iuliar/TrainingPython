@@ -4,7 +4,7 @@ n is sent as a parameter via the command line."""
 
 def suma_of_n_nr(n):
     suma = 0
-    for num in range(0, n+1, 1):
+    for num in range(1, n+1, 1):
         suma = suma + num
     return suma
 
